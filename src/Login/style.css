@@ -2,6 +2,7 @@
     width: 40%;
     margin: 0 auto;
     border: none;
+    background-color: aliceblue;
 }
 .form >input{
     padding: 10px 16px;

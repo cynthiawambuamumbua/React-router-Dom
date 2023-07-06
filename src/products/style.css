@@ -1,0 +1,30 @@
+.button {
+    background-color: #007bff; 
+    color: white;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-top: 10%;
+  }
+  .add {
+    margin-left: 10px;
+  }
+  .btn{
+    margin-left: 10px;
+  }
+  img {
+    width: 150px;
+    height: 150px;
+    display: flex;
+  }
+  .products{
+    justify-content: space-between;
+    align-items: center;
+    display: grid;
+    margin-left: 5%;
+    grid-template-columns: repeat(4,1fr);
+    /* flex-direction: column; */
+
+  }
+  h2{
+    margin-top: -7%;
+  }

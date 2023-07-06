@@ -1,15 +1,20 @@
-import React,{useEffect, useState} from "react";
+import React,{ useState} from "react";
+import { Link} from "react-router-dom";
 import './style.css'
 const Login=()=>{
     const [username,setUserName]=useState('');
     const [password,setUserPassword]=useState('');
+    const [email,setUserEmail]=useState('')
+
 
     const handleSubmit=async (e)=>{
         e.preventDefault();
 
         const data={
             username:username,
-            password:password
+            password:password,
+            email:email,
+            
         }
         try{
             const response= await fetch('https://dummyjson.com/auth/login', {
@@ -35,11 +40,16 @@ const Login=()=>{
                 onChange={(e)=>{setUserName(e.target.value)}}/>
                 <br/>
                 <br/>
+                <input placeholder="Enter Email" type="email"
+                onChange={(e)=>{setUserEmail(e.target.value)}}/>
+                <br/>
+                <br/>
                 <input placeholder="Enter password" type="password"
                 onChange={(e)=>{setUserPassword(e.target.value)}}/>
                 <br/>
                 <br/>
-               <a href=""></a> <button type="submit">Login</button>
+               {/* <a href="#products"> <button type="submit">Login</button></a> */}
+               <Link to={`/products/`}><button type="submit" className="button">Login</button></Link>
             </form>
             
         </div>

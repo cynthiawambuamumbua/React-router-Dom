@@ -1,12 +1,12 @@
-export default function Navbar(){
-    return <nav className="nav-bar">
-        <a href="/" className="products">PRODUCTS PAGE</a>
-        <ul>
-            <li className="active">
-                <a href="/products">Products</a>
-                <a href="/about">About</a>
-            </li>
-        </ul>
+import React from "react";
+import './style.css'
+const Navbar=()=>{
+    return(
+     <div className="nav">
+            <a href="/login">Login</a>
+            <a href="/products"> Products</a>
 
-    </nav>
+    </div>
+    )
 }
+export default Navbar;
