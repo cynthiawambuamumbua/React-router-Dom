@@ -40,10 +40,10 @@ const Products=()=>{
 
             {products.map(item=>(
                 <div key={item.id}>
+                <img src={item.thumbnail} alt={item.item} img/>
                     <h3>{item.title}</h3>
                     <h4>{item.discountPercentage}%</h4>
                     <h5>{item.price}</h5>
-                    <img src={item.thumbnail} alt={item.item} img/>
                     <Link to={`/products/${item.id}` }className="button"> 
                     <button type="add" className="btn">View Details</button >
                    </Link>
