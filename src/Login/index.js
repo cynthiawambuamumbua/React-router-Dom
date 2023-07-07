@@ -48,7 +48,6 @@ const Login=()=>{
                 onChange={(e)=>{setUserPassword(e.target.value)}}/>
                 <br/>
                 <br/>
-               {/* <a href="#products"> <button type="submit">Login</button></a> */}
                <Link to={`/products/`}><button type="submit" className="button">Login</button></Link>
             </form>
             

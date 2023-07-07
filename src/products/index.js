@@ -33,7 +33,6 @@ const Products=()=>{
     }
     return(
         <div className="products">
-            <h2>List of Products</h2>
             <Link to={`/AddProducts/` }className="button">
            <button type="add" className="add">Add product</button >
            </Link>
@@ -41,11 +40,11 @@ const Products=()=>{
 
             {products.map(item=>(
                 <div key={item.id}>
-                    <h3>{item.name}</h3>
+                    <h3>{item.title}</h3>
                     <h4>{item.discountPercentage}%</h4>
                     <h5>{item.price}</h5>
                     <img src={item.thumbnail} alt={item.item} img/>
-                    <Link to={`/product/${item.id}` }className="button"> 
+                    <Link to={`/products/${item.id}` }className="button"> 
                     <button type="add" className="btn">View Details</button >
                    </Link>
                     </div>

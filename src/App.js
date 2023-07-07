@@ -15,8 +15,7 @@ function App() {
   return (
     <div >
       <Navbar/>
-      {/* <AddProducts/> */}
-          <BrowserRouter>
+      <BrowserRouter>
       <Routes>
         <Route path='/login' element={<Login/>}/> 
         <Route path='/products' element={<Products/>}/>

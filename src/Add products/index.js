@@ -11,7 +11,7 @@ const AddProducts = () => {
     e.preventDefault();
   };
   return (
-    <div>
+    <div className='addProducts'>
       <h1>Add Product</h1>
       <form onSubmit={handleSubmit}>
         <label>
